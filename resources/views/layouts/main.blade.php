@@ -7,6 +7,9 @@
 
     <title>@yield('title')</title>
 
+    {{-- Favicon --}}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+
     <!-- Fonte do Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 
@@ -15,23 +18,24 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- CSS da aplicação -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="/js/scripts.js"></script>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
             <div class="collapse navbar-collapse" id="navbar">
                 <a href="/" class="navbar-brand">
                     <img src="/images/favicon.ico" alt="Tech Events">
+                    <strong>Tech Events</strong>
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="/" class="nav-link">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Criar Eventos</a>
+                        <a href="/events/create" class="nav-link">Criar Eventos</a>
                     </li>
                     <li class="nav-item">
                         <a href="/" class="nav-link">Entrar</a>
@@ -47,6 +51,7 @@
     <footer>
         <p>HDC Events &copy; 2020</p>
     </footer>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 
 </html>
